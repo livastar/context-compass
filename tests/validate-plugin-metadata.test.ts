@@ -7,7 +7,7 @@ describe("plugin metadata", () => {
     const marketplace = JSON.parse(readFileSync(".agents/plugins/marketplace.json", "utf8"));
     const plugin = JSON.parse(readFileSync("plugins/context-compass/.codex-plugin/plugin.json", "utf8"));
 
-    assert.equal(marketplace.name, "ds-light-context-tools");
+    assert.equal(marketplace.name, "livastar-context-tools");
     assert.equal(marketplace.plugins[0].name, "context-compass");
     assert.equal(marketplace.plugins[0].source.path, "./plugins/context-compass");
     assert.equal(marketplace.plugins[0].policy.installation, "AVAILABLE");

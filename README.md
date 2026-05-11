@@ -49,6 +49,21 @@ npm exec tsx src/context-compass.ts . --verify
 
 Default scans are read-only and do not use network access. `--verify` is the only mode that runs discovered quality scripts.
 
+## Install In Codex
+
+Add this repository as a Codex plugin marketplace source:
+
+```bash
+codex plugin marketplace add livastar/context-compass
+```
+
+Then open Codex and install Context Compass from the plugin browser:
+
+```bash
+codex
+/plugins
+```
+
 ## Codex Plugin Layout
 
 This repository is structured as a marketplace package:

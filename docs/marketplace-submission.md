@@ -2,7 +2,7 @@
 
 ## Current Status
 
-Context Compass is prepared as a local Codex marketplace package. The final official submission route must be checked against current Codex marketplace instructions before publication.
+Context Compass is prepared as a public Codex marketplace package through the `livastar/context-compass` GitHub repository. The final official curated Plugin Directory submission route must be checked against current Codex marketplace instructions before publication.
 
 ## Before Submission
 
@@ -11,6 +11,7 @@ Context Compass is prepared as a local Codex marketplace package. The final offi
 - Confirm `plugins/context-compass/scripts/context-compass.mjs` is up to date.
 - Confirm `plugins/context-compass/.codex-plugin/plugin.json` contains no placeholders.
 - Confirm `.agents/plugins/marketplace.json` installs `context-compass` from `./plugins/context-compass`.
+- Confirm local install works with `codex plugin marketplace add livastar/context-compass`, then `codex` and `/plugins`.
 - Run the scanner against this repo and at least one external fixture repo.
 - Review public links:
   - `https://ivanostanis.com`

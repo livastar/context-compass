@@ -1,7 +1,7 @@
 {
-  "name": "ds-light-context-tools",
+  "name": "livastar-context-tools",
   "interface": {
-    "displayName": "DS Light Context Tools"
+    "displayName": "Livastar Context Tools"
   },
   "plugins": [
     {
