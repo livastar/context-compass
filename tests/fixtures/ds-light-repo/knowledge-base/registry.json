@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "id": "alpha",
+      "name": "Alpha",
+      "public_label": "Alpha",
+      "status": "active",
+      "summary": "First active initiative",
+      "cluster": "flagship-bets",
+      "ecosystem_role": "validation-wedge",
+      "primary_icp": "Builders",
+      "primary_revenue_motion": "Advisory",
+      "trust_class": "internal-enablement",
+      "routing_targets": [],
+      "doc_path": "projects/alpha.md",
+      "memory_path": "memories/alpha.jsonl",
+      "related_projects": [],
+      "themes": [
+        "validation"
+      ]
+    }
+  ]
+}

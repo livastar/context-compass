@@ -1,0 +1,24 @@
+{
+  "name": "sample",
+  "version": "0.1.0",
+  "description": "Fixture plugin",
+  "author": {
+    "name": "Fixture"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sample",
+    "shortDescription": "Fixture plugin",
+    "longDescription": "Fixture plugin for Context Compass tests.",
+    "developerName": "Fixture",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "brandColor": "#2563EB",
+    "defaultPrompt": [
+      "Map this fixture"
+    ]
+  }
+}

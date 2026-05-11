@@ -1,0 +1,43 @@
+{
+  "name": "context-compass",
+  "version": "0.1.0",
+  "description": "Map project context, code hygiene, docs, memory surfaces, and next best actions before Codex changes a repository.",
+  "author": {
+    "name": "DS Light / Stanislav Ivanov",
+    "url": "https://ivanostanis.com"
+  },
+  "homepage": "https://livastar.observer",
+  "repository": "https://github.com/livastar/context-compass",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "context",
+    "agents",
+    "quality",
+    "local-first"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Context Compass",
+    "shortDescription": "Map context and choose a grounded next step.",
+    "longDescription": "Context Compass helps Codex orient before acting. It scans local project instructions, docs, plugin metadata, code/test hygiene, recent git signals, and optional portfolio knowledge-base files, then returns an evidence-backed context map with ranked next best actions.",
+    "developerName": "DS Light / Stanislav Ivanov",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://livastar.observer",
+    "privacyPolicyURL": "https://livastar.observer",
+    "termsOfServiceURL": "https://livastar.observer",
+    "defaultPrompt": [
+      "Map this repo's context before we act.",
+      "Find context risks and next best actions.",
+      "Show code, docs, tests, and memory signals."
+    ],
+    "brandColor": "#166534",
+    "composerIcon": "./assets/context-compass-small.svg",
+    "logo": "./assets/context-compass.svg",
+    "screenshots": []
+  }
+}

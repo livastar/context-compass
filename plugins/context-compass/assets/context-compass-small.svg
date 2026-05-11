@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Context Compass icon">
+  <rect width="128" height="128" rx="24" fill="#0f172a"/>
+  <circle cx="64" cy="64" r="42" fill="none" stroke="#86efac" stroke-width="8"/>
+  <path d="M72 26 57 69 99 56 72 26Z" fill="#f8fafc"/>
+  <path d="M56 102 71 59 29 72 56 102Z" fill="#22c55e"/>
+</svg>

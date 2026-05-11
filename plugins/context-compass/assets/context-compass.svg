@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Context Compass logo">
+  <rect width="512" height="512" rx="80" fill="#0f172a"/>
+  <circle cx="256" cy="256" r="166" fill="none" stroke="#86efac" stroke-width="28"/>
+  <circle cx="256" cy="256" r="22" fill="#f8fafc"/>
+  <path d="M288 104 225 278 398 224 288 104Z" fill="#f8fafc"/>
+  <path d="M224 408 287 234 114 288 224 408Z" fill="#22c55e"/>
+  <path d="M256 74v42M256 396v42M74 256h42M396 256h42" stroke="#64748b" stroke-width="16" stroke-linecap="round"/>
+</svg>
