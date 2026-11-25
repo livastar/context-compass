@@ -22,6 +22,12 @@ The default output is a Markdown report with:
 
 Every recommendation cites file evidence.
 
+## Paid Skill Visuals
+
+Each paid DS Light skill has a visual guide: what it does, how it acts, one sample run, and the result you should get. See [docs/skill-visuals](docs/skill-visuals/README.md).
+
+![Context Compass: what it does and how it acts](docs/skill-visuals/context-compass/flow.svg)
+
 ## Install For Local Development
 
 ```bash

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" stroke="none">
+<desc>A release gate on a road with changes waiting as parcels. Parts: ground island, road, three lane dashes, gate post, post base, striped barrier arm in six segments, pivot, signal housing, signal pole, red lamp, amber lamp, green lamp, front parcel with front, top and side faces, passed badge, rear parcel with front, top and side faces, unknown badge.</desc>
+<ellipse cx="220" cy="258" rx="204" ry="30" fill="#e2e8f0"/>
+<polygon points="24,252 416,252 396,224 44,224" fill="#cbd5e1"/>
+<rect x="70" y="236" width="40" height="5" fill="#f8fafc"/><rect x="190" y="236" width="40" height="5" fill="#f8fafc"/><rect x="310" y="236" width="40" height="5" fill="#f8fafc"/>
+<polygon points="40,196 52,184 98,184 86,196" fill="#cbd5e1"/><polygon points="86,196 98,184 98,222 86,234" fill="#64748b"/><rect x="40" y="196" width="46" height="38" fill="#94a3b8"/>
+<circle cx="63" cy="215" r="11" fill="#ffffff"/><circle cx="63" cy="215" r="8" fill="#fbbf24"/><circle cx="63" cy="215" r="2.5" fill="#ffffff"/>
+<polygon points="120,186 134,172 190,172 176,186" fill="#7dd3fc"/><polygon points="176,186 190,172 190,220 176,234" fill="#0284c7"/><rect x="120" y="186" width="56" height="48" fill="#38bdf8"/>
+<circle cx="148" cy="210" r="13" fill="#ffffff"/><circle cx="148" cy="210" r="10" fill="#22c55e"/>
+<polyline points="143.5,210 147.25,213.75 153.25,206.25" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="286" y="120" width="22" height="118" fill="#0f172a"/><rect x="276" y="234" width="42" height="14" rx="3" fill="#334155"/>
+<rect x="96" y="150" width="34" height="16" fill="#fbbf24"/><rect x="130" y="150" width="34" height="16" fill="#0f172a"/><rect x="164" y="150" width="34" height="16" fill="#fbbf24"/><rect x="198" y="150" width="34" height="16" fill="#0f172a"/><rect x="232" y="150" width="34" height="16" fill="#fbbf24"/><rect x="266" y="150" width="34" height="16" fill="#0f172a"/>
+<circle cx="297" cy="158" r="14" fill="#64748b"/>
+<rect x="352" y="168" width="10" height="72" fill="#334155"/><rect x="330" y="36" width="54" height="136" rx="14" fill="#0f172a"/>
+<circle cx="357" cy="64" r="15" fill="#fb7185"/><circle cx="357" cy="104" r="15" fill="#fbbf24"/><circle cx="357" cy="144" r="15" fill="#22c55e"/>
+</svg>
