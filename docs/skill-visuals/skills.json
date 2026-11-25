@@ -1,0 +1,793 @@
+{
+  "observed": "24 November 2026",
+  "skills": [
+    {
+      "slug": "context-compass",
+      "name": "Context Compass: Repo Prep & Proof-Driven Changes",
+      "short": "Context Compass",
+      "price": 9,
+      "listing": "https://www.agensi.io/skills/context-compass-repo-prep-proof-driven-changes",
+      "takeaway": "Trace each requested behavior to proof before you edit.",
+      "inputs": [
+        "A change request",
+        "The repository",
+        "Repository instructions"
+      ],
+      "outputs": [
+        "Repository baseline (read-only)",
+        "Proof-driven change brief",
+        "Open unknowns, kept visible"
+      ],
+      "steps": [
+        {
+          "t": "Set the contract",
+          "d": "Label each claim Verified, Inferred or Unknown."
+        },
+        {
+          "t": "Map the repo",
+          "d": "Local scan as an index, then read the real source."
+        },
+        {
+          "t": "Build the trace",
+          "d": "Criterion to contract, code, callers and test proof.",
+          "below": {
+            "t": "Unknown that matters? Stop and ask.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Prove, then change",
+          "d": "Failing test first, then the smallest edit. Only if asked."
+        },
+        {
+          "t": "Verify",
+          "d": "Run allowed checks. Record run and not run apart."
+        },
+        {
+          "t": "Report",
+          "d": "A six-part text brief.",
+          "below": {
+            "t": "Never \"done\" while a criterion lacks proof.",
+            "kind": "ok"
+          }
+        }
+      ],
+      "result": [
+        [
+          "Intent and scope",
+          "Desired outcome, constraints, non-goals"
+        ],
+        [
+          "Evidence and open decisions",
+          "Verified, Inferred leads, Unknown"
+        ],
+        [
+          "Acceptance and traceability",
+          "Criterion, contract, code, proof, status"
+        ],
+        [
+          "Change summary",
+          "Files changed and why, or proposed files"
+        ],
+        [
+          "Verification",
+          "Exact commands and what really ran"
+        ],
+        [
+          "Risks and follow-up",
+          "Remaining unknowns and the smallest next step"
+        ]
+      ],
+      "verdicts": [
+        [
+          "Verified",
+          "ok"
+        ],
+        [
+          "Partial",
+          "stop"
+        ],
+        [
+          "Unknown",
+          "plain"
+        ]
+      ],
+      "limits": [
+        "Returns text, not a PDF or file",
+        "No correctness guarantee",
+        "No whole-repo \"ready\" verdict",
+        "Read-only unless you ask for the change"
+      ],
+      "run": {
+        "title": "a scanner change in this repository",
+        "source": "a local, internal example in this repository",
+        "lines": [
+          [
+            1,
+            "Request: show API and schema contract files in the repo map"
+          ],
+          [
+            2,
+            "Scanner lists contracts/openapi.yaml as a lead, not proof"
+          ],
+          [
+            3,
+            "Trace: three criteria tied to code and fixture tests"
+          ],
+          [
+            4,
+            "New tests fail first: the contracts field is missing"
+          ],
+          [
+            5,
+            "npm run check passes: typecheck, lint, build, tests"
+          ],
+          [
+            6,
+            "Brief returned. One unknown kept: which contract governs a code path"
+          ]
+        ],
+        "verdict": "3 criteria Verified · 1 Unknown kept"
+      },
+      "whiteboard": "https://claude.ai/artifact/Q7ox87aqjVyuTiKhb9VoHJ"
+    },
+    {
+      "slug": "evidence-qa",
+      "name": "Evidence QA v1: Conversation Reviews with Checked Quotes",
+      "short": "Evidence QA v1",
+      "price": 59,
+      "listing": "https://www.agensi.io/skills/evidence-qa-v1-conversation-reviews-with-checked-quotes",
+      "takeaway": "Score conversations on your rubric, with every quote checked.",
+      "inputs": [
+        "Conversation transcripts",
+        "Your rubric",
+        "The speaker label to evaluate"
+      ],
+      "outputs": [
+        "QA draft report (Google)",
+        "Draft rows in Sheets",
+        "Review flags and coverage"
+      ],
+      "steps": [
+        {
+          "t": "Verify the kit",
+          "d": "Offline demo and checks. Node.js 22 or newer."
+        },
+        {
+          "t": "Define the rubric",
+          "d": "Your criteria and an explicit speaker label."
+        },
+        {
+          "t": "Configure",
+          "d": "Your credentials and destinations, kept out of output.",
+          "below": {
+            "t": "Access or consent missing? Stop and name the gap.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Scan",
+          "d": "Assess each criterion. Check quotes against the transcript."
+        },
+        {
+          "t": "Publish drafts",
+          "d": "Report and sheet rows. Resume without model replay."
+        },
+        {
+          "t": "Human review",
+          "d": "Compare flagged criteria with the transcript.",
+          "below": {
+            "t": "A person decides. Drafts are not verdicts.",
+            "kind": "ok"
+          }
+        }
+      ],
+      "result": [
+        [
+          "Rubric version",
+          "Which criteria were applied"
+        ],
+        [
+          "Evaluated speaker",
+          "The exact label you chose"
+        ],
+        [
+          "Artifacts",
+          "Report, draft rows, saved assessments"
+        ],
+        [
+          "Score and coverage",
+          "Per criterion, with checked excerpts"
+        ],
+        [
+          "Review-required criteria",
+          "What a person still has to check"
+        ],
+        [
+          "Verification state",
+          "Offline, buyer-account, or blocked"
+        ]
+      ],
+      "verdicts": [
+        [
+          "Offline-verified",
+          "plain"
+        ],
+        [
+          "Buyer-account-verified",
+          "ok"
+        ],
+        [
+          "Blocked",
+          "stop"
+        ]
+      ],
+      "limits": [
+        "Drafts, not final decisions",
+        "A found quote does not prove the label",
+        "No employment decisions",
+        "An offline pass does not prove live provider access"
+      ],
+      "run": {
+        "title": "the offline demonstration",
+        "source": "the bundled synthetic demo",
+        "lines": [
+          [
+            1,
+            "node scripts/cli.mjs demo, then the kit checks"
+          ],
+          [
+            2,
+            "Rubric validated. Speaker label set explicitly"
+          ],
+          [
+            3,
+            "No provider credentials needed offline"
+          ],
+          [
+            4,
+            "Each criterion assessed. Quotes matched to the transcript"
+          ],
+          [
+            5,
+            "Synthetic report and draft rows written"
+          ],
+          [
+            6,
+            "Review flags listed for a person to check"
+          ]
+        ],
+        "verdict": "Offline-verified · live access not shown yet"
+      },
+      "whiteboard": "https://claude.ai/artifact/FdG5MfNhevoTqK2Xk5jaqU"
+    },
+    {
+      "slug": "quality-department",
+      "name": "Quality Department — Idea to Production QA",
+      "short": "Quality Department",
+      "price": 69,
+      "listing": "https://www.agensi.io/skills/quality-department-idea-to-production-qa",
+      "takeaway": "A go or no-go you can defend, criterion by criterion.",
+      "inputs": [
+        "Ticket, spec or acceptance criteria",
+        "The change: branch or PR",
+        "Tests and repository rules"
+      ],
+      "outputs": [
+        "Ready / Not ready / Cannot say yet",
+        "Trace table per criterion",
+        "Next action per gap, with owner"
+      ],
+      "steps": [
+        {
+          "t": "Find what \"done\" means",
+          "d": "Read the requirements. Number the criteria.",
+          "below": {
+            "t": "No stated criteria? Cannot say yet. Ask.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Find the evidence",
+          "d": "The test or check behind each criterion."
+        },
+        {
+          "t": "Read the assertion",
+          "d": "Would it fail if the criterion broke?",
+          "below": {
+            "t": "Green but proves nothing? Report a test gap.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Run it yourself",
+          "d": "The suite, plus the spec example by hand."
+        },
+        {
+          "t": "Answer",
+          "d": "Decision first, then gaps and owners.",
+          "below": {
+            "t": "Ready is a recommendation. Deploying is your call.",
+            "kind": "ok"
+          }
+        }
+      ],
+      "result": [
+        [
+          "Decision",
+          "Ready, Not ready, or Cannot say yet"
+        ],
+        [
+          "Trace table",
+          "Criterion, evidence, what it proves, status"
+        ],
+        [
+          "Broken or unproven criteria",
+          "Observed against expected"
+        ],
+        [
+          "Weak tests",
+          "Passing tests that prove nothing, apart from bugs"
+        ],
+        [
+          "Next actions",
+          "Who does what for each open item"
+        ],
+        [
+          "Evidence scope",
+          "Local, staging, production kept apart"
+        ]
+      ],
+      "verdicts": [
+        [
+          "Ready",
+          "ok"
+        ],
+        [
+          "Not ready",
+          "stop"
+        ],
+        [
+          "Cannot say yet",
+          "plain"
+        ]
+      ],
+      "limits": [
+        "Does not deploy",
+        "Does not invent requirements",
+        "Not for fixing one test or reviewing code style",
+        "Nothing is production-verified unless observed there"
+      ],
+      "run": {
+        "title": "the refund casebook",
+        "source": "the bundled synthetic lab",
+        "lines": [
+          [
+            1,
+            "Ticket criteria AC1 to AC3 read and numbered"
+          ],
+          [
+            2,
+            "Existing smoke test found: green"
+          ],
+          [
+            3,
+            "Its check would stay green for a wrong amount"
+          ],
+          [
+            4,
+            "Charged 1,000, refunded 700, request 500: expected 300, observed 500"
+          ],
+          [
+            5,
+            "Not ready: AC1 fails. Owner: payments engineer"
+          ],
+          [
+            5,
+            "After the fix: 300, 300 and 0. Recommend for this ticket"
+          ]
+        ],
+        "verdict": "Not ready, then Ready after the rerun"
+      },
+      "whiteboard": "https://claude.ai/artifact/Mow3RdjkNwkwm3GQxm3QE7"
+    },
+    {
+      "slug": "skill-release-handoff",
+      "name": "Skill Release Handoff — Check the ZIP You Send",
+      "short": "Skill Release Handoff",
+      "price": 19,
+      "listing": "https://www.agensi.io/skills/skill-release-handoff-check-the-zip-you-send",
+      "takeaway": "Check the exact ZIP the recipient gets, not the folder.",
+      "inputs": [
+        "The release folder",
+        "The exact ZIP",
+        "Release contract and prerequisite list"
+      ],
+      "outputs": [
+        "report.md and report.json",
+        "The ZIP SHA-256 identity",
+        "Next action, with owner"
+      ],
+      "steps": [
+        {
+          "t": "Prepare",
+          "d": "Folder, ZIP, contract, prerequisites, evidence directory."
+        },
+        {
+          "t": "Audit both",
+          "d": "Source and archive, each read as data."
+        },
+        {
+          "t": "Compare",
+          "d": "Folder against ZIP, file by file.",
+          "below": {
+            "t": "Differs or missing? REVISE. Name the owner.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Check prerequisites",
+          "d": "Only declared, fixed version probes.",
+          "below": {
+            "t": "Unsupported or incomplete? HOLD.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Decide",
+          "d": "Four separate verdicts, never merged.",
+          "below": {
+            "t": "PASS: hand over the exact ZIP SHA-256.",
+            "kind": "ok"
+          }
+        },
+        {
+          "t": "Recipient accepts",
+          "d": "First task result tied to that ZIP."
+        }
+      ],
+      "result": [
+        [
+          "Artifact identity",
+          "The exact ZIP SHA-256"
+        ],
+        [
+          "Source audit",
+          "Its own verdict"
+        ],
+        [
+          "Archive audit",
+          "Its own verdict"
+        ],
+        [
+          "Parity",
+          "Differing or missing files, if any"
+        ],
+        [
+          "Runtime",
+          "Declared prerequisites met or unmet"
+        ],
+        [
+          "Next action",
+          "Owner and what to do next"
+        ]
+      ],
+      "verdicts": [
+        [
+          "PASS",
+          "ok"
+        ],
+        [
+          "REVISE",
+          "stop"
+        ],
+        [
+          "HOLD",
+          "plain"
+        ]
+      ],
+      "limits": [
+        "PASS does not prove task behavior",
+        "Not a security, install or deployment check",
+        "No marketplace acceptance",
+        "Changed inputs need a new run and evidence directory"
+      ],
+      "run": {
+        "title": "a repaired folder shipped in an old ZIP",
+        "source": "an illustrative case, not a recorded run",
+        "lines": [
+          [
+            1,
+            "Inputs fixed. Evidence directory sits outside the folder"
+          ],
+          [
+            2,
+            "Source audit and archive audit each report"
+          ],
+          [
+            3,
+            "Parity: one file differs between folder and ZIP"
+          ],
+          [
+            5,
+            "REVISE: owner rebuilds the ZIP"
+          ],
+          [
+            4,
+            "New ZIP, new evidence directory. Prerequisites met"
+          ],
+          [
+            5,
+            "PASS: ZIP SHA-256 handed to the recipient"
+          ]
+        ],
+        "verdict": "REVISE, then PASS on the rebuilt ZIP"
+      },
+      "whiteboard": "https://claude.ai/artifact/5UzpJe5khngdCnYwPKxHQD"
+    },
+    {
+      "slug": "ui-recheck",
+      "name": "UI Recheck — Before & After",
+      "short": "UI Recheck",
+      "price": 19,
+      "listing": "https://www.agensi.io/skills/ui-recheck-before-after",
+      "takeaway": "Same states, same widths, before and after, measured.",
+      "inputs": [
+        "Before snapshot of the component",
+        "After snapshot",
+        "Agreed states, widths, assertions"
+      ],
+      "outputs": [
+        "Matched before/after results",
+        "JSON and HTML export",
+        "Session receipt to resume"
+      ],
+      "steps": [
+        {
+          "t": "Agree the cases",
+          "d": "States, widths and assertions from the real API."
+        },
+        {
+          "t": "Prepare both sides",
+          "d": "Snapshots and adapters that mount the real component.",
+          "below": {
+            "t": "No component seam? Stop. No mock stands in.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Start the workbench",
+          "d": "A local Node.js server and a session receipt."
+        },
+        {
+          "t": "Run observations",
+          "d": "Same scenario and width on each side."
+        },
+        {
+          "t": "Inspect the pairs",
+          "d": "Failed, unsupported and unfinished stay visible.",
+          "below": {
+            "t": "A missing pair cannot pass.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Export",
+          "d": "JSON and HTML results.",
+          "below": {
+            "t": "Report only what actually ran.",
+            "kind": "ok"
+          }
+        }
+      ],
+      "result": [
+        [
+          "Matched pairs",
+          "Scenario and width, before and after"
+        ],
+        [
+          "Observations",
+          "Text and state, overflow, click callback, focus target"
+        ],
+        [
+          "Status per check",
+          "Passed, failed, unsupported, unfinished"
+        ],
+        [
+          "Exports",
+          "JSON and HTML"
+        ],
+        [
+          "Session receipt",
+          "Exact restart command for an interrupted run"
+        ]
+      ],
+      "verdicts": [
+        [
+          "Passed",
+          "ok"
+        ],
+        [
+          "Failed",
+          "stop"
+        ],
+        [
+          "Unsupported",
+          "plain"
+        ],
+        [
+          "Unfinished",
+          "plain"
+        ]
+      ],
+      "limits": [
+        "No screenshots or pixel comparison",
+        "Not an accessibility or release sign-off",
+        "Does not edit or deploy product code",
+        "Not a full browser regression suite"
+      ],
+      "run": {
+        "title": "the bundled synthetic example",
+        "source": "the bundled synthetic example",
+        "lines": [
+          [
+            1,
+            "Two states agreed: ordinary and long content"
+          ],
+          [
+            2,
+            "Before and after snapshots mount the same component"
+          ],
+          [
+            3,
+            "node server.mjs prints a local URL"
+          ],
+          [
+            4,
+            "320 px and 768 px: four matched pairs, eight observations"
+          ],
+          [
+            5,
+            "Each pair inspected side by side"
+          ],
+          [
+            6,
+            "JSON and HTML exported"
+          ]
+        ],
+        "verdict": "4 matched pairs · 8 observations reported"
+      },
+      "whiteboard": "https://claude.ai/artifact/NCJv8SEHefzp6b3yH3uVGJ"
+    },
+    {
+      "slug": "campaign-export-handoff",
+      "name": "Campaign Export Handoff",
+      "short": "Campaign Export Handoff",
+      "price": 29,
+      "listing": "https://www.agensi.io/skills/campaign-export-handoff",
+      "takeaway": "Which placement ships, who fixes what, what needs re-measuring.",
+      "inputs": [
+        "Approved brief and guide revision",
+        "The exact export files",
+        "Measurements for each file"
+      ],
+      "outputs": [
+        "Schedule list",
+        "Fix queue per designer",
+        "Hold list to re-measure"
+      ],
+      "steps": [
+        {
+          "t": "Reconcile",
+          "d": "Placements against guide rules. An owner for each."
+        },
+        {
+          "t": "Bind measurements",
+          "d": "To the file SHA-256, guide revision and observer."
+        },
+        {
+          "t": "Run the checker",
+          "d": "Every placement row is read."
+        },
+        {
+          "t": "Decide",
+          "d": "READY, FIX or HOLD.",
+          "below": {
+            "t": "File changed since measuring? HOLD.",
+            "kind": "stop"
+          }
+        },
+        {
+          "t": "Hand off",
+          "d": "Schedule list and a fix queue per designer."
+        },
+        {
+          "t": "Recheck",
+          "d": "Replacements measured again.",
+          "below": {
+            "t": "READY cites digest and revision. Producer decides.",
+            "kind": "ok"
+          }
+        }
+      ],
+      "result": [
+        [
+          "Decision",
+          "READY, FIX or HOLD"
+        ],
+        [
+          "Schedule list",
+          "Cleared placements, with digest and revision"
+        ],
+        [
+          "Fix queue",
+          "File, failed rule, observed, target, next action"
+        ],
+        [
+          "Hold list",
+          "Replacements that need fresh measurement"
+        ],
+        [
+          "Reconciliation",
+          "Omitted or extra placements, for the producer"
+        ],
+        [
+          "Receipt",
+          "Kept beside the reviewed version"
+        ]
+      ],
+      "verdicts": [
+        [
+          "READY",
+          "ok"
+        ],
+        [
+          "FIX",
+          "stop"
+        ],
+        [
+          "HOLD",
+          "plain"
+        ]
+      ],
+      "limits": [
+        "The producer owns the publish decision",
+        "Old measurements never clear a new file",
+        "An unavailable proof stays open",
+        "Sample files and approval are fictional"
+      ],
+      "run": {
+        "title": "the Harbour launch sample",
+        "source": "the bundled fictional sample",
+        "lines": [
+          [
+            1,
+            "Feed and story placements reconciled with the guide"
+          ],
+          [
+            2,
+            "Measurements bound to each file digest"
+          ],
+          [
+            4,
+            "FIX: story margin is 18 px, minimum is 40 px. Feed can be scheduled"
+          ],
+          [
+            4,
+            "HOLD: story file changed, old measurements belong to another digest"
+          ],
+          [
+            6,
+            "Designer records 48 px on the replacement"
+          ],
+          [
+            4,
+            "READY: all required checks pass"
+          ]
+        ],
+        "verdict": "FIX, then HOLD, then READY"
+      },
+      "whiteboard": "https://claude.ai/artifact/45oYpTyoCB4AXbL6AGTvEB"
+    }
+  ]
+}

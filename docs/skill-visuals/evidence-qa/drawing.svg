@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" stroke="none">
+<desc>A conversation transcript linked to a scorecard. Parts: sheet shadow, transcript sheet, four customer speech bars, two agent speech bars, one highlighted quote bar, dashed link from quote to score row, scorecard, three passed rows with ticks, one row marked for review, four score bars, round approval seal with ring and tick.</desc>
+<rect x="46" y="38" width="210" height="244" rx="12" fill="#94a3b8" fill-opacity=".5"/>
+<rect x="36" y="28" width="210" height="244" rx="12" fill="#f1f5f9"/>
+<rect x="52" y="48" width="120" height="18" rx="9" fill="#cbd5e1"/>
+<rect x="110" y="76" width="120" height="18" rx="9" fill="#7dd3fc"/>
+<rect x="52" y="104" width="150" height="18" rx="9" fill="#cbd5e1"/>
+<rect x="80" y="132" width="150" height="24" rx="12" fill="#fbbf24"/>
+<rect x="52" y="166" width="100" height="18" rx="9" fill="#cbd5e1"/>
+<rect x="120" y="194" width="110" height="18" rx="9" fill="#7dd3fc"/>
+<rect x="52" y="222" width="140" height="18" rx="9" fill="#cbd5e1"/>
+<polyline points="230,144 270,144 270,118 292,118" fill="none" stroke="#0f172a" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="292" y="44" width="124" height="190" rx="12" fill="#0f172a"/>
+<circle cx="318" cy="80" r="11" fill="#22c55e"/><polyline points="313.2,80 317.2,84 323.6,76" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="338" y="74" width="62" height="12" rx="6" fill="#334155"/>
+<circle cx="318" cy="118" r="11" fill="#22c55e"/><polyline points="313.2,118 317.2,122 323.6,114" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="338" y="112" width="62" height="12" rx="6" fill="#fbbf24"/>
+<circle cx="318" cy="156" r="11" fill="#22c55e"/><polyline points="313.2,156 317.2,160 323.6,152" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="338" y="150" width="62" height="12" rx="6" fill="#334155"/>
+<circle cx="318" cy="194" r="11" fill="#fbbf24"/><rect x="312" y="192" width="12" height="4" rx="2" fill="#0f172a"/><rect x="338" y="188" width="62" height="12" rx="6" fill="#334155"/>
+<circle cx="392" cy="250" r="30" fill="#22c55e"/><circle cx="392" cy="250" r="22" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="382.4,250 390.4,258 403.2,242" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

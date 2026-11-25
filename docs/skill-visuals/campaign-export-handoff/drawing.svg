@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" stroke="none">
+<desc>Three campaign placements pinned to a review board, each with a status badge. Parts: review board, square feed placement with sun and hills, ready badge, tall story placement with sun and hills, logo block set too close to the edge, margin gauge with two jaws and a bar, fix badge with a cross, wide banner placement with two text bars, hold badge, measuring rule with ticks.</desc>
+<rect x="20" y="24" width="400" height="256" rx="14" fill="#f1f5f9"/>
+<rect x="44" y="64" width="120" height="120" rx="8" fill="#38bdf8"/><circle cx="132" cy="96" r="14" fill="#fbbf24"/><polygon points="48,184 92,126 124,164 142,146 160,184" fill="#0f172a"/>
+<circle cx="164" cy="64" r="16" fill="#ffffff"/><circle cx="164" cy="64" r="12" fill="#22c55e"/><polyline points="159.2,64 163.2,68 169.6,60" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="196" y="44" width="92" height="200" rx="8" fill="#0284c7"/><circle cx="242" cy="92" r="18" fill="#fbbf24"/><polygon points="200,190 232,128 262,168 284,146 284,190" fill="#0f172a"/><rect x="204" y="204" width="46" height="18" rx="4" fill="#f8fafc"/>
+<path d="M196 250v18M204 250v18M190 259h20" fill="none" stroke="#e11d48" stroke-width="3" stroke-linecap="round"/>
+<circle cx="288" cy="44" r="16" fill="#ffffff"/><circle cx="288" cy="44" r="12" fill="#fb7185"/><path d="M283 39l10 10M293 39l-10 10" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+<rect x="308" y="150" width="96" height="46" rx="6" fill="#38bdf8"/><rect x="318" y="162" width="52" height="8" rx="4" fill="#f8fafc"/><rect x="318" y="176" width="34" height="8" rx="4" fill="#f8fafc"/>
+<circle cx="404" cy="150" r="16" fill="#ffffff"/><circle cx="404" cy="150" r="12" fill="#fbbf24"/><rect x="402" y="143" width="4" height="9" rx="2" fill="#ffffff"/><circle cx="404" cy="156" r="2.2" fill="#ffffff"/>
+<rect x="44" y="214" width="120" height="20" rx="3" fill="#fbbf24"/><path d="M56 214v8M68 214v8M80 214v12M92 214v8M104 214v8M116 214v12M128 214v8M140 214v8M152 214v12" fill="none" stroke="#0f172a" stroke-width="2"/>
+</svg>

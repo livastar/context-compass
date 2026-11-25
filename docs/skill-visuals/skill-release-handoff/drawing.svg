@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" stroke="none">
+<desc>A balance scale weighing a release folder against its ZIP archive. Parts: ground shadow, base, pillar, top hub, beam, four pan cords, left pan, right pan, folder back, sheet inside the folder, folder front, archive box, zip track, five zip teeth, zip pull, digest tag with four bars, equals badge with two bars.</desc>
+<ellipse cx="220" cy="280" rx="130" ry="9" fill="#e2e8f0"/>
+<polygon points="166,270 274,270 254,248 186,248" fill="#0f172a"/>
+<rect x="212" y="70" width="16" height="180" fill="#334155"/>
+<rect x="70" y="64" width="300" height="12" rx="6" fill="#0f172a"/><circle cx="220" cy="70" r="14" fill="#0f172a"/>
+<path d="M90 76L42 178M90 76L138 178M350 76L302 178M350 76L398 178" fill="none" stroke="#64748b" stroke-width="3"/>
+<polygon points="50,114 84,114 92,124 132,124 132,172 50,172" fill="#d97706"/><rect x="60" y="120" width="62" height="20" fill="#f8fafc"/><rect x="50" y="134" width="82" height="42" rx="4" fill="#fbbf24"/>
+<ellipse cx="90" cy="180" rx="60" ry="10" fill="#64748b"/>
+<rect x="312" y="116" width="76" height="60" rx="6" fill="#38bdf8"/><rect x="346" y="116" width="8" height="60" fill="#0f172a"/>
+<rect x="346" y="118" width="4" height="5" fill="#f8fafc"/><rect x="350" y="128" width="4" height="5" fill="#f8fafc"/><rect x="346" y="138" width="4" height="5" fill="#f8fafc"/><rect x="350" y="148" width="4" height="5" fill="#f8fafc"/><rect x="346" y="158" width="4" height="5" fill="#f8fafc"/>
+<rect x="343" y="156" width="14" height="18" rx="3" fill="#f8fafc"/>
+<ellipse cx="350" cy="180" rx="60" ry="10" fill="#64748b"/>
+<polygon points="372,84 410,84 420,95 410,106 372,106" fill="#0f172a"/><rect x="378" y="91" width="4" height="8" fill="#86efac"/><rect x="385" y="89" width="4" height="12" fill="#86efac"/><rect x="392" y="92" width="4" height="7" fill="#86efac"/><rect x="399" y="90" width="4" height="10" fill="#86efac"/>
+<circle cx="220" cy="150" r="27" fill="#22c55e"/><rect x="207" y="140" width="26" height="6" rx="3" fill="#ffffff"/><rect x="207" y="154" width="26" height="6" rx="3" fill="#ffffff"/>
+</svg>
