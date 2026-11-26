@@ -24,3 +24,7 @@ npm run build:visuals
 The whiteboards are private Claude whiteboards built from the same facts. They add an interactive sample run. The owner controls who can open them.
 
 Animations stop when the reader asks for reduced motion.
+
+## Upload-ready formats
+
+Agensi's screenshot uploader rejects SVG. PNG, JPEG, GIF, WebP, MP4 and WebM versions of every visual are in [`assets/visuals/`](../../assets/visuals/README.md). Rebuild them with `npm run export:visuals`.
